@@ -1,50 +1,99 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Expense Tracker
 
-Currently, two official plugins are available:
+A simple **Expense Tracker** application built using **React**, **Zod**, and **React Hook Form**. This project is an excellent exercise for beginners looking to enhance their skills in React, form handling, and validation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Features
+- **Add Expenses**: Enter description, amount, and category.
+- **Form Validation**: Powered by **React Hook Form** and **Zod**.
+- **Beginner-Friendly**: Easy to set up and run.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
+- **React**: For building the user interface.
+- **Zod**: For schema validation and type inference.
+- **React Hook Form**: For lightweight form handling.
+- **Bootstrap**: For responsive and simple styling.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installation & Setup
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/kevinkrahul/Expense_Tracker.git
+   cd expense-tracker
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Install required libraries:
+   ```bash
+   npm i bootstrap@5.2.3
+   npm i zod@3.20.6
+   npm i @hookform/resolvers@2.9.11
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and navigate to:
+   ```
+   http://localhost:port
+   ```
+
+---
+
+## How It Works
+
+1. Enter an expense description.
+2. Input the amount for the expense.
+3. Select a category from the dropdown.
+4. Submit the form to log the expense.
+5. Validation ensures all fields are correctly filled!
+
+---
+
+## Screenshot
+
+![Expense Tracker UI](/src/Document/img-1.png text=Expense+Tracker+Screenshot)
+
+---
+
+## Why This Project?
+
+This project is designed to:
+1. Introduce beginners to **React Hook Form** for efficient form handling.
+2. Demonstrate the use of **Zod** for intuitive form validation.
+3. Provide a hands-on example of integrating **Bootstrap** for responsive design.
+
+---
+
+## Learnings
+
+Through this project, you'll learn:
+- How to create reusable form components in React.
+- Integrating third-party libraries like **Zod** and **React Hook Form**.
+- Styling and structuring a simple app with **Bootstrap**.
+
+---
+
+## Contributing
+
+Contributions are welcome! Feel free to:
+- Fork the repository.
+- Create a branch.
+- Submit a pull request with your changes.
+
+---
+
+Happy coding! (☞ﾟヮﾟ)☞
