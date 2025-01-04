@@ -65,7 +65,7 @@ A simple **Expense Tracker** application built using **React**, **Zod**, and **R
 
 ## Screenshot
 
-![Expense Tracker UI](/src/Document/img-1.png text=Expense+Tracker+Screenshot)
+![Expense Tracker UI](`/src/Document/img-1.png` text=Expense+Tracker+Screenshot)
 
 ---
 
